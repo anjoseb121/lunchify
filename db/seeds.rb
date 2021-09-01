@@ -1,7 +1,13 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+User.create!(email: 'antonio@lunchify.com', password: 'password', role: 'admin')
+User.create!(email: 'employee@lunchify.com', password: 'password', role: 'employee')
+
+Lunch.create!(name: 'Chicken and waffles')
+Lunch.create!(name: 'Tacos')
+Lunch.create!(name: 'Curry')
+Lunch.create!(name: 'Pizza')
+Lunch.create!(name: 'Sushi')
+Lunch.create!(name: 'Breakfast')
+Lunch.create!(name: 'Hamburgers')
+Lunch.create!(name: 'Spaguetti')
+Lunch.create!(name: 'Salmon')
+Lunch.create!(name: 'Sandwiches')

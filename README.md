@@ -1,24 +1,49 @@
-# README
+##### Prerequisites
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The setups steps expect following tools installed on the system.
 
-Things you may want to cover:
+- Git
+- Ruby 2.6.2
+- Rails 6.1.4
 
-* Ruby version
+##### 1. Check out the repository
 
-* System dependencies
+```bash
+git clone git@github.com:anjoseb121/lunchify.git
+```
+##### 2. Install dependencies
 
-* Configuration
+```bash
+bundle install
+yarn install
+```
 
-* Database creation
+##### 3. Create and setup the database
 
-* Database initialization
+Run the following commands to create and setup the database.
 
-* How to run the test suite
+```ruby
+rails db:create
+rails db:migrate
+```
+##### 4. Execute seeds
 
-* Services (job queues, cache servers, search engines, etc.)
+Run the following commands to create sample data
 
-* Deployment instructions
+```ruby
+rails db:seed
+```
 
-* ...
+##### 5. Start the Rails server
+
+You can start the rails server using the command given below.
+
+```ruby
+rails s
+```
+
+And now you can visit the site with the URL http://localhost:3000
+
+You should be able to login with the tests users:
+- admin: antonio@lunchify.com, password: password
+- employee: employee@lunchify.com, password: password
